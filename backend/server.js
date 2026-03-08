@@ -1,10 +1,10 @@
 import express from "express";
 import cors from "cors";
 import connectDB from "./db.js";
+import "./config/passport.js";
 import "dotenv/config";
 import authRoute from "./routes/authRoute.js";
 import userRoute from "./routes/userRoute.js";
-import "./config/passport.js";
 
 const app = express();
 const PORT = process.env.PORT;
